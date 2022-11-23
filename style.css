@@ -1,0 +1,75 @@
+body {
+  background-color: #1DA1F2;    
+  font-family: 'Poppins', sans-serif;
+  margin: 0 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #DA2027;
+}
+
+.container {
+  background-color: #F5F8FA;    
+  width: 60%;
+  height: 100%;
+  padding: 25px;
+  overflow: hidden;   
+}
+
+/* scrollbar */
+.container::-webkit-scrollbar {
+    width: 10px;   
+}
+
+.container::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #DA2027;
+  border-radius: 6px;
+  border: 3px solid #DA2027;
+}
+
+#addNew {
+  cursor: pointer;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 2px solid #1DA1F2;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+span.fw-bold {
+    color: #DA2027;   
+}
+
+#msg {
+  color: red;
+}
